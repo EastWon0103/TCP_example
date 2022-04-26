@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <style>
+        body {
+            background-color: #E3E9FF;
+            width: 100%;
+            height: 100%;
+        }
+        #background{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 800px;
+            background-color: white;
+            box-shadow: 0px 1px 20px 13px #A1A1A1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #title{
+            background-color:#AF7EEB;
+            flex:1;
+            text-align: center;
+            color: white;
+        }
+        #list{
+            background-color:white;
+            flex:10;
+            font-size:1.5rem;
+            color:#8E99BD;
+            list-style-image: url("list-circle.png");
+            overflow-x:hidden;
+            overflow-y:auto;
+            scrollbar-width: none;
+        }
+
+        #list::-webkit-scrollbar{
+            display: none;
+        }
+
+        #list li{
+            padding-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="title">
+            <h1>To Do List</h1>
+        </div>
+        <div id="list">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
